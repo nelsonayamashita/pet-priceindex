@@ -22,6 +22,22 @@ SHEET_URLS = {
         "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1796805684",
         "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=93894901"
     },
+    "FOR":{
+        "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1095207839",
+        "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1734542931"
+    },
+    "CAMP": {
+        "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=281458802",
+        "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=2123440685"
+    },
+    "SOROCABA": {
+        "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=505742746",
+        "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=630689705"
+    },
+    "JUNDIAI": {
+        "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1798234047",
+        "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1199137498"
+    },
 }
 
 COL_TYPES = {
