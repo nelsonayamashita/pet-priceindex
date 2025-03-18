@@ -31,10 +31,10 @@ df_sku_rj = df_sku_data["RJ"]
 df_sku_cwb = df_sku_data["CWB"]
 df_sku_poa = df_sku_data["POA"]
 df_sku_bh = df_sku_data["BH"]
-df_sku_for = df_data["FOR"]
-df_sku_camp = df_data["CAMP"]
-df_sku_sorocaba = df_data["SOROCABA"]
-df_sku_jundiai = df_data["JUNDIAI"]
+df_sku_for = df_sku_data["FOR"]
+df_sku_camp = df_sku_data["CAMP"]
+df_sku_sorocaba = df_sku_data["SOROCABA"]
+df_sku_jundiai = df_sku_data["JUNDIAI"]
 
 df_style_format = {
     "Petyard Price": "R$ {:.2f}",
@@ -129,7 +129,7 @@ create_tab(tab1, "São Paulo", "Petyard  - São Paulo", df_sp_raw, df_sku_sp)
 create_tab(tab2, "Rio de Janeiro", "Petyard - Rio de Janeiro", df_rj_raw, df_sku_rj)
 create_tab(tab3, "Curitiba", "Petyard - Curitiba", df_cwb_raw, df_sku_cwb)
 create_tab(tab4, "Porto Alegre", "Petyard - Porto Alegre", df_poa_raw, df_sku_poa)
-create_tab(tab5, "Fortaleza", "Petyard - Fortaleza", df_for_raw, df_sku_for)
-create_tab(tab6, "Campinas", "Petyard - Campinas", df_camp_raw, df_sku_camp)
-create_tab(tab7, "Sorocaba", "Petyard - Sorocaba", df_sorocaba_raw, df_sku_sorocaba)
-create_tab(tab8, "Jundiaí", "Petyard - Jundiaí", df_jundiai_raw, df_sku_jundiai)
+create_tab(tab5, "Belo Horizonte", "Petlove - Belo Horizonte", df_bh_raw, df_sku_bh)
+create_tab(tab6, "Fortaleza", "Petyard - Fortaleza", df_for_raw, df_sku_for)
+create_tab(tab7, "Campinas", "Petyard - Campinas", df_camp_raw, df_sku_camp)
+create_tab(tab8, "Sorocaba", "Petyard - Sorocaba", df_sorocaba_raw, df_sku_sorocaba)
