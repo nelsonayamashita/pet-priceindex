@@ -41,8 +41,8 @@ SHEET_URLS = {
 }
 
 COL_TYPES = {
-    "Código EAN": "object",
-    "eans": "object",
+    "Código EAN": str,
+    "eans": str,
     "original_prices": float,
     "discount_prices": float
 }
@@ -59,8 +59,10 @@ def load_ref_sku():
                         if dtype == float:
                             df[col] = (
                                 df[col]
-                                .str.replace(r'[^0-9]+|\.', '', regex=True)
-                                .str.replace(",", ".")
+                                .str.replace(r'[^\d,.-]', '', regex=True)
+                                .str.replace(r'\.(?=\d{3}(?:\D|$))', '', regex=True)
+                                .str.replace(',', '.', regex=True)
+                                .replace('', '0')
                                 .astype(float)
                             )
                         else:
@@ -88,8 +90,10 @@ def load_data():
                         if dtype == float:
                             df[col] = (
                                 df[col]
-                                .str.replace(r'[^0-9.]+|\.', '', regex=True)
-                                .str.replace(",", ".")
+                                .str.replace(r'[^\d,.-]', '', regex=True)
+                                .str.replace(r'\.(?=\d{3}(?:\D|$))', '', regex=True)
+                                .str.replace(',', '.', regex=True)
+                                .replace('', '0')
                                 .astype(float)
                             )
                         else:
