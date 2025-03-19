@@ -42,14 +42,32 @@ SHEET_URLS = {
 
 COL_TYPES = {
     "Código EAN": "object",
-    "eans": "object"
+    "eans": "object",
+    "original_prices": float,
+    "discount_prices": float
 }
 
 def load_ref_sku():
     sku_data = {}
     for city, urls in SHEET_URLS.items():
         try:
-            df = pd.read_csv(urls["sku"], decimal=",", dtype=COL_TYPES)
+            df = pd.read_csv(urls["sku"])
+
+            for col, dtype in COL_TYPES.items():
+                if col in df.columns:
+                    try:
+                        if dtype == float:
+                            df[col] = (
+                                df[col]
+                                .str.replace(r'[^0-9]+|\.', '', regex=True)
+                                .str.replace(",", ".")
+                                .astype(float)
+                            )
+                        else:
+                            df[col] = df[col].astype(dtype)
+                    except Exception as e:
+                        print(f"⚠️ Erro ao converter coluna '{col}' para {dtype} em {city}: {e}")
+
             sku_data[city] = df
         except Exception as e:
             print(f"❌ Erro ao carregar SKU de {city}: {e}")
@@ -62,7 +80,23 @@ def load_data():
     data = {}
     for city, urls in SHEET_URLS.items():
         try:
-            df = pd.read_csv(urls["crawler"], decimal=",", parse_dates=["crawl_date"], dtype=COL_TYPES)
+            df = pd.read_csv(urls["crawler"], parse_dates=["crawl_date"])
+
+            for col, dtype in COL_TYPES.items():
+                if col in df.columns:
+                    try:
+                        if dtype == float:
+                            df[col] = (
+                                df[col]
+                                .str.replace(r'[^0-9.]+|\.', '', regex=True)
+                                .str.replace(",", ".")
+                                .astype(float)
+                            )
+                        else:
+                            df[col] = df[col].astype(dtype)
+                    except Exception as e:
+                        print(f"⚠️ Erro ao converter coluna '{col}' para {dtype} em {city}: {e}")
+
             data[city] = df
         except Exception as e:
             print(f"❌ Erro ao carregar dados de {city}: {e}")
