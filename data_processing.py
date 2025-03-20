@@ -38,6 +38,10 @@ SHEET_URLS = {
         "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1798234047",
         "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1199137498"
     },
+    "FLN": {
+        "crawler": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1880848928",
+        "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=937539626"
+    }
 }
 
 COL_TYPES = {

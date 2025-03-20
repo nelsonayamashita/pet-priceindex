@@ -11,7 +11,7 @@ st.logo(
     icon_image="imgs/hubii-icon-rounded.png",
 )
 
-st.title("📊 Monitoramento de Preço - Petyard Ifood")
+st.title("📊 Monitoramento de Preço - Ifood")
 
 df_data = load_data()
 df_sku_data = load_ref_sku()
@@ -25,6 +25,7 @@ df_for_raw = df_data["FOR"]
 df_camp_raw = df_data["CAMP"]
 df_sorocaba_raw = df_data["SOROCABA"]
 df_jundiai_raw = df_data["JUNDIAI"]
+df_fln_raw = df_data["FLN"]
 
 df_sku_sp = df_sku_data["SP"]
 df_sku_rj = df_sku_data["RJ"]
@@ -35,6 +36,7 @@ df_sku_for = df_sku_data["FOR"]
 df_sku_camp = df_sku_data["CAMP"]
 df_sku_sorocaba = df_sku_data["SOROCABA"]
 df_sku_jundiai = df_sku_data["JUNDIAI"]
+df_sku_fln = df_sku_data["FLN"]
 
 df_style_format = {
     "Petyard Price": "R$ {:.2f}",
@@ -114,7 +116,7 @@ def create_tab(tab, city_name, store_name, df_raw, df_sku):
         st.write(f"### ❓Tabela de produtos faltantes - {city_name}")
         st.dataframe(not_in_store)
 
-tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
+tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9 = st.tabs([
     "🚗 Petyard - SP",
     "🌴 Petyard - RJ",
     "🥶 Petyard - CWB",
@@ -123,6 +125,7 @@ tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs([
     "🏖️ Petyard - FOR",
     "🌿 Petyard - CAMP",
     "🎻 Petyard - Sorocaba",
+    "🏄 Galo - Floripa "
 ])
 
 create_tab(tab1, "São Paulo", "Petyard  - São Paulo", df_sp_raw, df_sku_sp)
@@ -133,3 +136,4 @@ create_tab(tab5, "Belo Horizonte", "Petlove - Belo Horizonte", df_bh_raw, df_sku
 create_tab(tab6, "Fortaleza", "Petyard - Fortaleza", df_for_raw, df_sku_for)
 create_tab(tab7, "Campinas", "Petyard - Campinas", df_camp_raw, df_sku_camp)
 create_tab(tab8, "Sorocaba", "Petyard - Sorocaba", df_sorocaba_raw, df_sku_sorocaba)
+create_tab(tab9, "Florianópolis", "AmPm Rede Galo", df_fln_raw, df_sku_fln)
