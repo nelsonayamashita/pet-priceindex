@@ -11,7 +11,7 @@ st.logo(
     icon_image="imgs/hubii-icon-rounded.png",
 )
 
-st.title("📊 Monitoramento de Preço - Ifood")
+st.title("📊 Monitoramento de Preço")
 
 df_data = load_data()
 df_sku_data = load_ref_sku()
