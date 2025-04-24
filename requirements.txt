@@ -1,3 +1,5 @@
-pandas
-numpy
-streamlit
+pandas~=2.2.2
+numpy~=2.2.2
+streamlit~=1.43.2
+boto3~=1.37.10
+pyathena~=3.12.2
