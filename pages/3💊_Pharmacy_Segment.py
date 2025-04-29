@@ -11,27 +11,20 @@ st.logo(
     icon_image="imgs/hubii-icon-rounded.png",
 )
 
-st.title("📊 Monitoramento de Preço - Ifood Pets")
+st.title("📊 Monitoramento de Preço - Ifood Pharmacy")
 
-segment = "pet"
+segment = "pharmacy"
 
 df_data = load_data(segment)
 df_sku_data = load_ref_sku(segment)
 
 # Map of cities and metadata
 city_metadata = {
-    "SP": ("São Paulo", "Petyard  - São Paulo"),
-    "RJ": ("Rio de Janeiro", "Petyard - Rio de Janeiro"),
-    "CWB": ("Curitiba", "Petyard - Curitiba"),
-    "POA": ("Porto Alegre", "Petyard - Porto Alegre"),
-    "BH": ("Belo Horizonte", "Petlove - Belo Horizonte"),
-    "FOR": ("Fortaleza", "Petyard - Fortaleza"),
-    "CAMP": ("Campinas", "Petyard - Campinas"),
-    "SOROCABA": ("Sorocaba", "Petyard - Sorocaba"),
+    "SP": ("São Paulo", "Power Farma"),
 }
 
 tabs = st.tabs([f"{emoji} {name}" for code, (name, _) in city_metadata.items()
-                for emoji in [dict(SP="🚗", RJ="🌴", CWB="🥶", POA="🧉", BH="🧀", FOR="🏖️", CAMP="🌿", SOROCABA="🎻")[code]]])
+                for emoji in [dict(SP="🚗")[code]]])
 
 for tab, (code, (city_name, store_name)) in zip(tabs, city_metadata.items()):
     df_city_raw = df_data[df_data["crawler_id"] == f"{segment}-ifood-{code.lower()}-1"]

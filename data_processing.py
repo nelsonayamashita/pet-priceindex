@@ -46,6 +46,11 @@ SHEET_URLS = {
         "SP": {
             "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=625148883"
         }
+    },
+    "pharmacy": {
+        "SP": {
+            "sku": "https://docs.google.com/spreadsheets/d/1NDm0DWPtAxlSlh5qRKF0iz9_2WbQ155ZfPY-D0nqkXo/export?format=csv&gid=1192735632"
+        }
     }
 }
 S3_STAGING_DIR = st.secrets["S3_STAGING_DIR"]
