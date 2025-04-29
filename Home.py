@@ -9,7 +9,7 @@ st.write("""
 Por serem muitos dados, pode ser que demore para carregar. Se você só quer os dados do crawler na integra pode acessá-los no metabase:
 \n  -[🐶 Crawler Pet](https://bi.hubii.co/question#eyJkYXRhc2V0X3F1ZXJ5Ijp7InF1ZXJ5Ijp7InNvdXJjZS10YWJsZSI6NDA3OH0sInR5cGUiOiJxdWVyeSIsImRhdGFiYXNlIjo1LCJpbmZvIjp7ImNhcmQtZW50aXR5LWlkIjoiT3QwMkI5MTAwWE14d19nTjlhM25YIn19LCJkaXNwbGF5IjoidGFibGUiLCJ2aXN1YWxpemF0aW9uX3NldHRpbmdzIjp7fX0=)
 \n  -[🧊 Crawler Ice](https://bi.hubii.co/question#eyJkYXRhc2V0X3F1ZXJ5Ijp7InF1ZXJ5Ijp7InNvdXJjZS10YWJsZSI6NDA4NX0sInR5cGUiOiJxdWVyeSIsImRhdGFiYXNlIjo1LCJpbmZvIjp7ImNhcmQtZW50aXR5LWlkIjoieEh2bm9FRzkyd00tNVVaeVpxM0F1In19LCJkaXNwbGF5IjoidGFibGUiLCJ2aXN1YWxpemF0aW9uX3NldHRpbmdzIjp7fX0=)
-\n  -[🥤 Crawler Beverage](https://bi.hubii.co/question#eyJkYXRhc2V0X3F1ZXJ5Ijp7InF1ZXJ5Ijp7InNvdXJjZS10YWJsZSI6NDA4Nn0sInR5cGUiOiJxdWVyeSIsImRhdGFiYXNlIjo1LCJpbmZvIjp7ImNhcmQtZW50aXR5LWlkIjoiMEQtVndmNE53TGtiYkNwa01Jd0lOIn19LCJkaXNwbGF5IjoidGFibGUiLCJ2aXN1YWxpemF0aW9uX3NldHRpbmdzIjp7fX0=
+\n  -[🥤 Crawler Beverage](https://bi.hubii.co/question#eyJkYXRhc2V0X3F1ZXJ5Ijp7InF1ZXJ5Ijp7InNvdXJjZS10YWJsZSI6NDA4Nn0sInR5cGUiOiJxdWVyeSIsImRhdGFiYXNlIjo1LCJpbmZvIjp7ImNhcmQtZW50aXR5LWlkIjoiMEQtVndmNE53TGtiYkNwa01Jd0lOIn19LCJkaXNwbGF5IjoidGFibGUiLCJ2aXN1YWxpemF0aW9uX3NldHRpbmdzIjp7fX0=)
 \n  -[💊 Crawler Pharmacy](https://bi.hubii.co/question#eyJkYXRhc2V0X3F1ZXJ5Ijp7InF1ZXJ5Ijp7InNvdXJjZS10YWJsZSI6NDA5NX0sInR5cGUiOiJxdWVyeSIsImRhdGFiYXNlIjo1LCJpbmZvIjp7ImNhcmQtZW50aXR5LWlkIjoicExCRURxNktsMUF3V04yVHlJTk1DIn19LCJkaXNwbGF5IjoidGFibGUiLCJ2aXN1YWxpemF0aW9uX3NldHRpbmdzIjp7fX0=)
 """)
 
